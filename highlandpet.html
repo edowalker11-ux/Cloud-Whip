@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spec Rewrite, Highland Pet Supply</title>
+<style>
+  :root{
+    --ink:#15211d;
+    --slate:#5a6b65;
+    --line:#e2ebe8;
+    --paper:#ffffff;
+    --wash:#f4f8f7;
+    --old:#9aa8a3;
+    --oldbg:#f3f6f5;
+    --new:#0f7d6a;
+    --newbg:#e7f7f2;
+    --accent:#12a98f;
+    --gold:#12a98f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:Georgia, 'Times New Roman', serif;
+    color:var(--ink);
+    background:var(--wash);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px;margin:0 auto;background:var(--paper);}
+  header{
+    background:var(--ink);
+    color:#fff;
+    padding:48px 56px 40px;
+  }
+  .brand{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:24px;
+  }
+  header h1{font-size:30px;font-weight:normal;line-height:1.25;margin-bottom:10px;}
+  header .for{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:14px;color:#aec2bc;letter-spacing:0.02em;
+  }
+  .note{
+    background:var(--newbg);
+    border-left:3px solid var(--accent);
+    padding:28px 32px;margin:40px 56px 0;
+  }
+  .eyebrow{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:12px;font-weight:600;
+  }
+  .note p{font-size:16px;margin-bottom:14px;}
+  .note p:last-child{margin-bottom:0;}
+  .problem{padding:40px 56px 8px;}
+  .problem .eyebrow{color:var(--gold);}
+  .problem p{font-size:16px;}
+  .divider{height:1px;background:var(--line);margin:36px 56px;}
+  .section{padding:36px 56px 8px;margin-bottom:44px;break-inside:avoid;page-break-inside:avoid;}
+  .sec-label{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:12px;letter-spacing:0.16em;text-transform:uppercase;
+    color:var(--slate);font-weight:600;padding-bottom:10px;
+    border-bottom:2px solid var(--ink);margin-bottom:28px;display:inline-block;
+  }
+  .pair{margin-bottom:26px;}
+  .tag{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:11px;letter-spacing:0.14em;text-transform:uppercase;
+    font-weight:700;margin-bottom:10px;
+  }
+  .block{padding:22px 26px;border-radius:3px;font-size:17px;line-height:1.65;}
+  .old .tag{color:var(--old);}
+  .old .block{background:var(--oldbg);color:var(--old);font-style:italic;}
+  .new .tag{color:var(--new);}
+  .new .block{background:var(--newbg);color:var(--ink);border-left:3px solid var(--new);}
+  .why{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:14px;line-height:1.6;color:var(--slate);
+    margin-top:22px;padding-left:22px;position:relative;
+  }
+  .why::before{
+    content:"WHY";font-size:9.5px;letter-spacing:0.14em;font-weight:700;
+    color:var(--gold);position:absolute;left:0;top:3px;
+    writing-mode:vertical-rl;transform:rotate(180deg);
+  }
+  footer{background:var(--ink);color:#fff;padding:44px 56px 48px;margin-top:12px;}
+  footer .eyebrow{color:var(--gold);margin-bottom:14px;}
+  footer p{font-size:15px;color:#cdd8d4;margin-bottom:6px;font-family:'Helvetica Neue',Arial,sans-serif;}
+  footer .sig{font-size:17px;color:#fff;margin-top:18px;font-family:Georgia,serif;}
+  @media (max-width:640px){
+    header,.problem,.section,footer{padding-left:24px;padding-right:24px;}
+    .note{margin-left:24px;margin-right:24px;padding:22px 22px;}
+    .divider{margin-left:24px;margin-right:24px;}
+    header h1{font-size:24px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<style>.pfbar{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;padding:12px 56px;border-bottom:1px solid var(--line);}.pfbar a{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.02em;}@media(max-width:640px){.pfbar{padding-left:24px;padding-right:24px;}}</style>
+<div class="pfbar"><a href="index.html">&larr; Edo Walker IV · Portfolio</a></div>
+
+  <header>
+    <div class="brand">Copi Creative · Conversion Copywriting</div>
+    <h1>Homepage Rewrite</h1>
+    <div class="for">Prepared for Highland Pet Supply · Virginia Highland, Atlanta</div>
+  </header>
+
+  <div class="note">
+    <div class="eyebrow">A note on your site</div>
+    <p>I found Highland while looking for the best independent pet shops in Atlanta, and your Virginia Highland spot has a great reputation. But your homepage doesn't show any of that. It opens with curbside pickup instructions from a few years back and a gift card offer, then points people to a Yahoo address. A first time visitor has no idea you have a training center, curated food, or staff who actually know pets.</p>
+    <p>This rewrite fixes that. Same shop, same heart, just copy that finally sells what makes you worth the drive.</p>
+  </div>
+
+  <div class="problem">
+    <div class="eyebrow">The core problem</div>
+    <p>Your page leads with logistics, curbside pickup and gift cards, not a single reason to choose you over Chewy or a big box store. Your real edge is hiding in one line of your welcome text: you have both a training center and a retail location. That is the whole pitch. A neighborhood shop with expert staff and a trainer in the building is something no warehouse can offer, and right now it's an afterthought. This rewrite pulls it to the front.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <span class="sec-label">Headline</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Welcome to Highland Pet Supply! This is Atlanta's Highland Pet Supply on the web.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Good food, real advice, and a trainer who knows your dog.</div>
+    </div>
+    <div class="why">"Welcome to our website" is wasted space. The new headline names your three advantages in seven words, and every one of them is something Chewy cannot do.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Subhead</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">None. The page jumps straight into curbside pickup instructions.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Highland Pet Supply is Atlanta's family run pet store and training center in Virginia Highland. Everything your pet needs, picked by people who actually use it.</div>
+    </div>
+    <div class="why">Gives a first time visitor the who, what, and where in one breath, and plants the local, expert angle before they scroll.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Why Highland (new section)</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">None. Your page never says why to choose you.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">We know pets, not just products. Ask us anything and get a straight answer, not a shrug. A training center, right here. Puppy basics to problem behavior, in the same place you grab the treats. Local beats a warehouse. Out of food on a Sunday? Walk in. No shipping wait, no subscription you forgot to cancel.</div>
+    </div>
+    <div class="why">Three short reasons to pick you, each aimed straight at the online competition. This is the section your current page is missing entirely, and it's the one that actually sells the store.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Pickup Section</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Now offering curbside, no-touch pick-up! During this difficult time, Highland Pet Supply is staying open to ensure you can get food and supplies for your furry family members...</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Short on time? Call or email your order and pay online. We'll have it bagged and loaded before you park.</div>
+    </div>
+    <div class="why">Your curbside copy still reads like 2020. Same service, reframed as everyday convenience instead of a pandemic measure.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Gift Cards</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Gift cards available for all the pets in your life! Highland Pet Supply offers online gift cards in any denomination... Learn more, click here.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Give the pet lover in your life exactly what they want. Any amount, emailed the same day.</div>
+    </div>
+    <div class="why">Shorter, warmer, and it drops the clunky "click here."</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Closing Call to Action</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Hours and a Yahoo email buried at the bottom of the page.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Come see us in Virginia Highland. 1186 North Highland Avenue NE. Open 7 days, staffed by people who'll remember your dog's name. Your pet will thank you.</div>
+    </div>
+    <div class="why">Ends with a clear, local invitation and one more hit of the personal touch, instead of trailing off into store hours.</div>
+  </div>
+
+  <footer>
+    <div class="eyebrow">This one's yours</div>
+    <p>No catch. I put this together because I think it'll help. If it's useful and you'd ever want it live on your site, just reach out and we'll talk. Either way, the rewrite is yours to keep.</p>
+    <div class="sig">Edo Walker IV</div>
+    <p>Copi Creative · hello@copicreative.co</p>
+  </footer>
+
+</div>
+</body>
+</html>

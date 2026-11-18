@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Detail Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f7f3ec;--ink:#241f1b;--muted:#7c7067;--accent:#b4605a;
+    --line:#e7ddcf;--card:#fffdf8;--found:#b5524a;--fixc:#2f7d5a;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#1b1613;--ink:#f1e9df;--muted:#a89a8e;--accent:#d98982;
+      --line:#352c25;--card:#241d18;--found:#e08c82;--fixc:#6fc49a;color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#1b1613;--ink:#f1e9df;--muted:#a89a8e;--accent:#d98982;
+    --line:#352c25;--card:#241d18;--found:#e08c82;--fixc:#6fc49a;color-scheme:dark;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));max-width:940px;margin:0 auto;}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+  nav{display:flex;align-items:center;justify-content:space-between;padding-block:20px;border-bottom:1px solid var(--line);}
+  .mark{font-family:Fraunces,serif;font-size:20px;font-weight:600;}
+  .back{font-size:13.5px;color:var(--muted);text-decoration:none;}
+  .back:hover{color:var(--accent);}
+  .hero{padding-block:52px 34px;}
+  .hero h1{font-family:Fraunces,serif;font-weight:500;font-size:clamp(34px,5.5vw,50px);line-height:1.05;letter-spacing:-.01em;text-wrap:balance;margin:14px 0 18px;max-width:18ch;}
+  .hero p{font-size:17.5px;color:var(--muted);max-width:44ch;}
+  .fixes{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-bottom:30px;}
+  @media (max-width:720px){.fixes{grid-template-columns:1fr;}}
+  .fix{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;}
+  .fix .site{font-family:Fraunces,serif;font-size:18px;font-weight:600;margin-bottom:3px;}
+  .fix .where{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;}
+  .fix .row{display:flex;gap:12px;margin-bottom:11px;align-items:flex-start;}
+  .fix .tg{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;flex-shrink:0;width:48px;padding-top:2px;}
+  .tagx{color:var(--found);}
+  .tagc{color:var(--fixc);}
+  .fix .v{font-size:14.5px;line-height:1.5;}
+  .fix .was .v{color:var(--muted);font-style:italic;}
+  .fix .now .v{color:var(--ink);}
+  .fix .note{font-size:13px;color:var(--muted);margin-top:10px;padding-top:12px;border-top:1px solid var(--line);}
+  footer{border-top:1px solid var(--line);margin-top:10px;}
+  footer .wrap{padding-block:30px 44px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:13px;color:var(--muted);}
+  footer b{color:var(--ink);}
+  footer a{color:var(--accent);text-decoration:none;font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="mark">The Detail Check</div>
+    <a class="back" href="index.html">&larr; Portfolio</a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">Proofing · a final set of eyes</div>
+    <h1>Errors I caught on live sites.</h1>
+    <p>Part of good copy is catching the small things before they ship. These are real mistakes sitting on live Atlanta business pages right now, each with the fix.</p>
+  </header>
+
+  <div class="fixes">
+    <div class="fix">
+      <div class="site">House of Wellness Med Spa</div>
+      <div class="where">Footer copyright</div>
+      <div class="row was"><span class="tg tagx">Found</span><span class="v">© 2035 by The Health Spa</span></div>
+      <div class="row now"><span class="tg tagc">Fix</span><span class="v">© 2026 The House of Wellness Med Spa</span></div>
+      <p class="note">Wrong year and the wrong business name, on the page asking you to trust them with your skin.</p>
+    </div>
+    <div class="fix">
+      <div class="site">Natural Body Spa</div>
+      <div class="where">Location count</div>
+      <div class="row was"><span class="tg tagx">Found</span><span class="v">"Six locations" up top, "all five of our locations" lower down</span></div>
+      <div class="row now"><span class="tg tagc">Fix</span><span class="v">Pick the true number and use it everywhere. It's six.</span></div>
+      <p class="note">A contradiction on one page makes a reader wonder what else is sloppy.</p>
+    </div>
+    <div class="fix">
+      <div class="site">Natural Body Spa</div>
+      <div class="where">Promo banner</div>
+      <div class="row was"><span class="tg tagx">Found</span><span class="v">"Black Friday is December 28th, 2025"</span></div>
+      <div class="row now"><span class="tg tagc">Fix</span><span class="v">Black Friday 2025 was November 28. Correct it or pull the banner.</span></div>
+      <p class="note">A wrong, expired promo date tells visitors nobody is watching the site.</p>
+    </div>
+    <div class="fix">
+      <div class="site">Accupac</div>
+      <div class="where">Footer and body</div>
+      <div class="row was"><span class="tg tagx">Found</span><span class="v">Copyright still reads © 2023, with a wall of keyword spam in the body</span></div>
+      <div class="row now"><span class="tg tagc">Fix</span><span class="v">Update the year and cut the keyword list.</span></div>
+      <p class="note">A stale year plus visible SEO stuffing makes a premium maker look cheap to the exact brands they want.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><b>The Detail Check</b> · Copywriting sample by Edo Walker IV of Copi Creative.</div>
+    <div><a href="index.html">&larr; Back to portfolio</a></div>
+  </div>
+</footer>
+</body>
+</html>

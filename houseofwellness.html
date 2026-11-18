@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spec Rewrite, The House of Wellness Med Spa</title>
+<style>
+  :root{
+    --ink:#2b3d1c;
+    --slate:#5d6b4f;
+    --line:#e4ebdb;
+    --paper:#ffffff;
+    --wash:#f5f8f0;
+    --old:#a1a99a;
+    --oldbg:#f4f6f0;
+    --new:#5a8a2f;
+    --newbg:#eef5e3;
+    --accent:#6ba23a;
+    --gold:#3f88bf;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:Georgia, 'Times New Roman', serif;
+    color:var(--ink);
+    background:var(--wash);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:780px;margin:0 auto;background:var(--paper);}
+  header{
+    background:#31471f;
+    color:#fff;
+    padding:48px 56px 40px;
+  }
+  .brand{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:12px;letter-spacing:0.22em;text-transform:uppercase;
+    color:#bfe08f;margin-bottom:24px;
+  }
+  header h1{font-size:30px;font-weight:normal;line-height:1.25;margin-bottom:10px;}
+  header .for{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:14px;color:#c7d6b6;letter-spacing:0.02em;
+  }
+  .note{
+    background:var(--newbg);
+    border-left:3px solid var(--accent);
+    padding:28px 32px;margin:40px 56px 0;
+  }
+  .eyebrow{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:12px;font-weight:600;
+  }
+  .note p{font-size:16px;margin-bottom:14px;}
+  .note p:last-child{margin-bottom:0;}
+  .problem{padding:40px 56px 8px;}
+  .problem .eyebrow{color:var(--gold);}
+  .problem p{font-size:16px;}
+  .divider{height:1px;background:var(--line);margin:36px 56px;}
+  .section{padding:36px 56px 8px;margin-bottom:44px;break-inside:avoid;page-break-inside:avoid;}
+  .sec-label{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:12px;letter-spacing:0.16em;text-transform:uppercase;
+    color:var(--slate);font-weight:600;padding-bottom:10px;
+    border-bottom:2px solid var(--ink);margin-bottom:28px;display:inline-block;
+  }
+  .pair{margin-bottom:26px;}
+  .tag{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:11px;letter-spacing:0.14em;text-transform:uppercase;
+    font-weight:700;margin-bottom:10px;
+  }
+  .block{padding:22px 26px;border-radius:3px;font-size:17px;line-height:1.65;}
+  .old .tag{color:var(--old);}
+  .old .block{background:var(--oldbg);color:var(--old);font-style:italic;}
+  .new .tag{color:var(--new);}
+  .new .block{background:var(--newbg);color:var(--ink);border-left:3px solid var(--new);}
+  .why{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size:14px;line-height:1.6;color:var(--slate);
+    margin-top:22px;padding-left:22px;position:relative;
+  }
+  .why::before{
+    content:"WHY";font-size:9.5px;letter-spacing:0.14em;font-weight:700;
+    color:var(--gold);position:absolute;left:0;top:3px;
+    writing-mode:vertical-rl;transform:rotate(180deg);
+  }
+  footer{background:#31471f;color:#fff;padding:44px 56px 48px;margin-top:12px;}
+  footer .eyebrow{color:#bfe08f;margin-bottom:14px;}
+  footer p{font-size:15px;color:#d3dfc6;margin-bottom:6px;font-family:'Helvetica Neue',Arial,sans-serif;}
+  footer .sig{font-size:17px;color:#fff;margin-top:18px;font-family:Georgia,serif;}
+  @media (max-width:640px){
+    header,.problem,.section,footer{padding-left:24px;padding-right:24px;}
+    .note{margin-left:24px;margin-right:24px;padding:22px 22px;}
+    .divider{margin-left:24px;margin-right:24px;}
+    header h1{font-size:24px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<style>.pfbar{font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;padding:12px 56px;border-bottom:1px solid var(--line);}.pfbar a{color:var(--gold);text-decoration:none;font-weight:600;letter-spacing:.02em;}@media(max-width:640px){.pfbar{padding-left:24px;padding-right:24px;}}</style>
+<div class="pfbar"><a href="index.html">&larr; Edo Walker IV · Portfolio</a></div>
+
+  <header>
+    <div class="brand">Copi Creative · Conversion Copywriting</div>
+    <h1>Homepage Rewrite</h1>
+    <div class="for">Prepared for The House of Wellness Med Spa · Downtown Atlanta</div>
+  </header>
+
+  <div class="note">
+    <div class="eyebrow">A note on your site</div>
+    <p>I came across House of Wellness while looking at downtown Atlanta spas, and the setup is strong: head spa, massages, facials, right by the stadiums and GSU. But your homepage doesn't lead with any of it. It opens with your address and a list of nearby landmarks, and the footer still reads "© 2035 by The Health Spa," which isn't even your name.</p>
+    <p>Small thing, but to someone deciding whether to trust you with their skin, it reads as unfinished. This rewrite puts your best services up front and cleans up the details.</p>
+  </div>
+
+  <div class="problem">
+    <div class="eyebrow">The core problem</div>
+    <p>Your page opens with a map and a list of nearby stadiums, not a reason to book. The most searched, most booked service you offer, the head spa, sits fourth on a plain bullet list, and your downtown location is framed as directions instead of a selling point. On top of that, the footer copyright reads 2035 and "The Health Spa." A visitor deciding whether to spend money on their face notices things like that. This rewrite leads with what people actually want and fixes the trust leaks.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <span class="sec-label">Headline</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">None. The page opens with "Location / 18 Marietta St NW."</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Your downtown Atlanta reset. Massages, facials, and the head spa everyone's booking.</div>
+    </div>
+    <div class="why">Right now there's no headline at all, just an address. This gives a visitor an instant reason to keep reading and leads with your most in demand service.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Subhead</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Our team of licensed wellness &amp; beauty specialists provides: Massages, Hair Salon Services, Facials, Vitamin Shots, Head Spa.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Licensed specialists, a private relaxation lounge, and same day appointments, steps from Mercedes-Benz Stadium and State Farm Arena.</div>
+    </div>
+    <div class="why">Keeps your service range but adds the two things that close a booking: same day availability and a premium setting. The landmarks become a convenience perk, not the opening line.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Head Spa Spotlight (new section)</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">Listed as one bullet among five services.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">New here for the head spa? Good call. A deep cleanse, scalp massage, and warm rinse that leaves your hair and your head feeling brand new. The treatment people are driving across the city for.</div>
+    </div>
+    <div class="why">The head spa is a trend people are actively searching for. Giving it its own moment turns curiosity into a booking instead of hiding it in a list.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Perfect For</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">A relaxing reset in the city. A mini makeover before an event. Health, wellness, and beauty services that help you look &amp; feel your best.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Here for a reset between meetings, a glow up before the game, or an hour that's finally just for you. Walk out refreshed, confident, and cared for.</div>
+    </div>
+    <div class="why">Your current version is close. This makes the occasions concrete and ties them to your downtown, event driven crowd.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Booking</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">If we don't answer immediately, it simply means we're servicing a client and protecting the peaceful environment they deserve... We can't wait to service you.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">Book online any time, or text us. If we don't pick up, we're with a client protecting the calm you're coming in for. Leave a text and we'll get right back to you.</div>
+    </div>
+    <div class="why">Keeps your gracious tone but leads with the easiest action, booking online, and trims the repetition. "Service you" reads a little off for a spa; "get right back to you" is warmer.</div>
+  </div>
+
+  <div class="section">
+    <span class="sec-label">Footer (trust fix)</span>
+    <div class="pair old">
+      <div class="tag">Current</div>
+      <div class="block">© 2035 by The Health Spa.</div>
+    </div>
+    <div class="pair new">
+      <div class="tag">Rewritten</div>
+      <div class="block">© 2026 The House of Wellness Med Spa · Downtown Atlanta.</div>
+    </div>
+    <div class="why">A two second fix that removes a quiet red flag. The wrong year and the wrong business name make a careful customer wonder what else is unfinished.</div>
+  </div>
+
+  <footer>
+    <div class="eyebrow">This one's yours</div>
+    <p>No catch. I put this together because I think it'll help. If it's useful and you'd ever want it live on your site, just reach out and we'll talk. Either way, the rewrite is yours to keep.</p>
+    <div class="sig">Edo Walker IV</div>
+    <p>Copi Creative · hello@copicreative.co</p>
+  </footer>
+
+</div>
+</body>
+</html>
